@@ -170,11 +170,14 @@ class _HomePageStateDesktop extends State<HomePageDesktop> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        GestureDetector(
-                          onTap: () {
+                        ElevatedButton(
+                          onPressed: () {
                             const url = "https://www.instagram.com/astro.iitbhu/";
                             launchURL(url);
                           },
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all(Colors.white),
+                          ),
                           child: Container(
                             height: 70.sp,
                             width: 70.sp,
@@ -186,11 +189,14 @@ class _HomePageStateDesktop extends State<HomePageDesktop> {
                             child: Image.asset('icons/instagram.png'),
                           ),
                         ),
-                        GestureDetector(
-                          onTap: () {
-                            const url = "WhatsApp";
+                        ElevatedButton(
+                          onPressed: () {
+                            const url = "https://chat.whatsapp.com/IxV1CI7uLTW1wvmcLxgp9e";
                             launchURL(url);
                           },
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all(Colors.white),
+                          ),
                           child: Container(
                             height: 70.sp,
                             width: 70.sp,
@@ -202,11 +208,14 @@ class _HomePageStateDesktop extends State<HomePageDesktop> {
                             child: Image.asset('icons/whatsapp.png'),
                           ),
                         ),
-                        GestureDetector(
-                          onTap: () {
+                        ElevatedButton(
+                          onPressed: () {
                             const url = "https://www.facebook.com/astro.iitbhu/";
                             launchURL(url);
                           },
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all(Colors.white),
+                          ),
                           child: Container(
                             height: 70.sp,
                             width: 70.sp,
@@ -225,27 +234,33 @@ class _HomePageStateDesktop extends State<HomePageDesktop> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          GestureDetector(
-                            onTap: () {
-                              const url = "Discord";
+                          ElevatedButton(
+                            onPressed: () {
+                              const url = "https://discord.link/AstroIITBHU";
                               launchURL(url);
                             },
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.white),
+                            ),
                             child: Container(
                               height: 70.sp,
                               width: 70.sp,
                               padding: EdgeInsets.all(12.sp),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(35.sp),
+                                 borderRadius: BorderRadius.circular(35.sp),
                                 color: Colors.white,
                               ),
                               child: Image.asset('icons/discord.png'),
                             ),
                           ),
-                          GestureDetector(
-                            onTap: () {
+                          ElevatedButton(
+                            onPressed: () {
                               const url = "https://www.linkedin.com/company/astroiitbhu/";
                               launchURL(url);
                             },
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.white),
+                            ),
                             child: Container(
                               height: 70.sp,
                               width: 70.sp,
@@ -257,11 +272,14 @@ class _HomePageStateDesktop extends State<HomePageDesktop> {
                               child: Image.asset('icons/linkedin.png'),
                             ),
                           ),
-                          GestureDetector(
-                            onTap: () {
+                          ElevatedButton(
+                            onPressed: () {
                               const url = "https://astroiitbhu.in/";
                               launchURL(url);
                             },
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.white),
+                            ),
                             child: Container(
                               height: 70.sp,
                               width: 70.sp,
